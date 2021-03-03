@@ -1,10 +1,17 @@
 import * as React from "react"
+import { Link } from 'gatsby';
 
 // markup
 const IndexPage = () => {
   return (
     <main>
       <title>Home Page</title>
+      <nav>
+        Home |&nbsp;
+        <Link to='/about'>
+          About
+        </Link>
+      </nav>
       <h1>
         Congratulations
         <br />
