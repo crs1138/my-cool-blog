@@ -1,27 +1,17 @@
 import * as React from "react"
-import { Link } from 'gatsby';
-
+import Layout from '../components/Layout/Layout';
+import { StaticImage } from 'gatsby-plugin-image';
 // markup
 const IndexPage = () => {
   return (
-    <main>
-      <title>Home Page</title>
-      <nav>
-        Home |&nbsp;
-        <Link to='/about'>
-          About
-        </Link>
-      </nav>
-      <h1>
-        Congratulations
-        <br />
-        <span >— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p>Lorem ipsum… this is a paragraph</p>
-    </main>
+    <Layout pageTitle='Home page'>
+      <p>This is my frontpage content.</p>
+      <StaticImage
+        src='https://pbs.twimg.com/media/Evfau5TWYAgqTB-?format=jpg&name=900x900'
+        alt='Honza at Gatsby Conf 2021'
+        layout='fullWidth'
+      />
+    </Layout>
   )
 }
 
